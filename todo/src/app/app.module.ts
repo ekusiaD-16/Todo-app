@@ -20,9 +20,9 @@ import { CreateComponent } from './create/create.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     // Materials
     MatSlideToggleModule,
-    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
