@@ -31,7 +31,13 @@ export class TaskService {
     return this.tasks
   }
 
-  add() {}
+  getNextTaskNo() : number {
+    return this.tasks.length;
+  }
+
+  add(task:Task) {
+    this.tasks.push(task);
+  }
 
   updateOne() {}
 
