@@ -6,7 +6,7 @@ import { CreateComponent } from './create/create.component';
 
 const routes: Routes = [
   {path : '', component : ListComponent },
-  {path : 'task', component : TaskComponent },
+  {path : 'task/:no', component : TaskComponent },
   {path : 'create', component : CreateComponent },
 ];
 

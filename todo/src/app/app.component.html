@@ -1,7 +1,7 @@
 <div>
-  <h1>タイトル</h1>
+  <h1>TODO LIST</h1>
   <p>
-    こんにちは
+    こんにちは {{username}} さん
   </p>
 
   <!-- <mat-slide-toggle>toggle Me</mat-slide-toggle>
@@ -9,8 +9,7 @@
 
 <nav>
   <a [routerLink]="['']"> [LIST] </a>
-  <a [routerLink]="['task']"> [TASK] </a>
-  <a [routerLink]="['create']"> [CREATE] </a>
+  <a [routerLink]="['/task', currentTaskNo]"> [TASK] </a>
+  <a [routerLink]="['/create']"> [CREATE] </a>
 </nav>
-// router
 <router-outlet></router-outlet>

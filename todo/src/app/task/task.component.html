@@ -1,1 +1,10 @@
-<p>task works!</p>
+<div *ngIf="taskNo==-1; else taskBody">
+    <p>タスクが見つかりません</p>
+</div>
+
+<ng-template #taskBody>
+    <p>#{{task.no}}</p>
+    <p>{{task.state.name}}</p>
+    <p>{{task.title}}</p>
+    <p>{{task.desc}}</p>
+</ng-template>
