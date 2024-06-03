@@ -17,7 +17,7 @@ export class TaskService {
     ];
   }
 
-  getOne  (no:Number) {
+  getOne  (no:number) {
     const result = this.tasks.find( (task) => task.no===no );
     if (typeof(result)==='undefined') {
       return new Task(-1, -1, 'error','not found');
@@ -37,7 +37,11 @@ export class TaskService {
 
   update() {}
 
-  deleteOne() {}
+  deleteOne(no:number) {
+    let target = this.getOne(no);
+    target.check = false;
+    target.state.changeState('deleted');
+  }
 
   clear() {}
 

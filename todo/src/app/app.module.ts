@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListComponent } from './list/list.component';
 import { TaskComponent } from './task/task.component';
 import { CreateComponent } from './create/create.component';
+import { DeleteComponent } from './delete/delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     TaskComponent,
-    CreateComponent
+    CreateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
